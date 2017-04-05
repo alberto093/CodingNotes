@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>duration</key>
+		<dict>
+			<key>Definition</key>
+			<string>The length of time that a note is sounded. It can be whole, half, quarter, eighth, sixteenth.</string>
+		</dict>
+		<key>frequency</key>
+		<dict>
+			<key>Definition</key>
+			<string>The number of periods or regularly occurring events of any given kind in unit of time, usually in one second. The note A which is above Middle C has a frequency of 440 Hz. It&apos;s called A4</string>
+		</dict>
+		<key>tempo</key>
+		<dict>
+			<key>Definition</key>
+			<string>The rate of speed of a musical passage or work. Usually indicated by such terms as adagio, allegro, etc., or by reference to the metronome.</string>
+		</dict>
+		<key>for loop</key>
+		<dict>
+			<key>Definition</key>
+			<string>A block of repeated code that runs a certain number of times. </string>
+		</dict>
+		<key>note</key>
+		<dict>
+			<key>Definition</key>
+			<string>A tone of a certain pitch, or a sign or character used to represent it in a piece of music.</string>
+		</dict>
+		<key>accidental</key>
+		<dict>
+			<key>Definition</key>
+			<string>A sign placed before a note indicating a chromatic alteration of its pitch. </string>
+		</dict>
+		<key>score</key>
+		<dict>
+			<key>Definition</key>
+			<string>A piece of music with the vocal and instrumental parts arranged on lines.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
