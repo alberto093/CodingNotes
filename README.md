@@ -3,6 +3,9 @@
 
 Project has been made in `Swift` 3.1 and runs only on iPad®.
 
+Check out the video [here](https://www.youtube.com/watch?v=AtFOH-BCje0).
+
+
 ## About
 
 In this playgroundbook you can test your musical knowledge using the utmost basic control flow elements like a for-loop, calling a function with set parameters and managing the returning values.
