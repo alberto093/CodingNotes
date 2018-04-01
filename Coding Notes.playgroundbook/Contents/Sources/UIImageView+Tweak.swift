@@ -60,22 +60,15 @@ extension UIImageView {
         }
     }
     
-    var isPlaying: Bool {
-        
-        get {
-            return self.isPlaying
-        }
-        
-        set {
-            if newValue {
-                self.layer.shadowColor = UIColor.red.cgColor
-                self.layer.shadowOffset = .zero
-                self.layer.shadowOpacity = 0.9
-                self.layer.shadowRadius = 5
-            } else {
-                self.layer.shadowColor = nil
-                self.layer.shadowRadius = 0
-            }
+    func update(isPlaying: Bool) {
+        if isPlaying {
+            self.layer.shadowColor = UIColor.red.cgColor
+            self.layer.shadowOffset = .zero
+            self.layer.shadowOpacity = 0.9
+            self.layer.shadowRadius = 5
+        } else {
+            self.layer.shadowColor = nil
+            self.layer.shadowRadius = 0
         }
     }
 }

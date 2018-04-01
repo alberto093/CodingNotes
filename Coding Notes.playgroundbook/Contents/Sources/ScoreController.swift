@@ -62,7 +62,7 @@ public class ScoreController: UICollectionViewController, UICollectionViewDelega
         self.noteFireTime = TimeInterval(self.notes.first!.rate * 60 / self.bpm)
         
         if let cell = self.collectionView!.cellForItem(at: IndexPath(item: 0, section: 0)) as? ScoreCell, let note = cell.viewWithTag(100) as? UIImageView {
-            note.isPlaying = true
+            note.update(isPlaying: true)
         }
     }
     
@@ -70,14 +70,14 @@ public class ScoreController: UICollectionViewController, UICollectionViewDelega
         
         if let cell = self.collectionView!.cellForItem(at: self.indexPathForItem(noteIndex: self.currentNote)!) as? ScoreCell {
             var note = cell.viewWithTag(100 + self.currentNote) as? UIImageView
-            note?.isPlaying = true
+            note?.update(isPlaying: true)
             
             if let currentCell = cell.viewWithTag(100 + self.currentNote - 1) as? UIImageView {
                 note = currentCell.viewWithTag(100 + self.currentNote - 1) as? UIImageView
-                note?.isPlaying = false
+                note?.update(isPlaying: false)
             } else if let previousCell = self.collectionView!.cellForItem(at: self.indexPathForItem(noteIndex: self.currentNote - 1)!) as? ScoreCell, let previousNote = previousCell.viewWithTag(100 + self.currentNote - 1) as? UIImageView {
                 
-                previousNote.isPlaying = false
+                previousNote.update(isPlaying: false)
             }
         }
     }
@@ -106,7 +106,7 @@ public class ScoreController: UICollectionViewController, UICollectionViewDelega
                 self.collectionView!.isUserInteractionEnabled = true
                 
                 if let cell = self.collectionView!.cellForItem(at: self.indexPathForItem(noteIndex: self.currentNote)!) as? ScoreCell, let note = cell.viewWithTag(100 + self.currentNote) as? UIImageView {
-                    note.isPlaying = false
+                    note.update(isPlaying: false)
                 }
                 
                 return
