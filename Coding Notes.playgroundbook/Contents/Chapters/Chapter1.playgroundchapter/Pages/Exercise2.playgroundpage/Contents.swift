@@ -30,18 +30,18 @@ let D5: Frequency = .D5
 let E5: Frequency = .E5
 //#-end-hidden-code
 let tempo = /*#-editable-code*/<#T##bpm##Int#>/*#-end-editable-code*/
-let jingle = [/*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
+let jingle: [Frequency] = [B4,
+              G4,
+              D5,
+              G4,
               /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
+              E5,
+              D5,
               /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/,
-              /*#-editable-code*/<#T##frequency##Frequency#>/*#-end-editable-code*/]
+              E5,
+              D5,
+              G4,
+              D5]
 //#-hidden-code
 createNotes(frequencies: jingle, tempo: tempo)
 playgroundStart()
