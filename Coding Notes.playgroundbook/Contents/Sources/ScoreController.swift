@@ -173,20 +173,20 @@ public class ScoreController: UICollectionViewController, UICollectionViewDelega
         if self.notes.count > 0 {
             switch indexPath.item {
             case 0:
-                let tempoView: UIImageView
-                
-                if let tempo = self.tempo {
-                    tempoView = UIImageView(image: UIImage(named: tempo.description))
-                } else {
-                    tempoView = UIImageView(image: UIImage(named: "4:4"))
-                }
-                
-                tempoView.contentMode = .scaleAspectFit
-                tempoView.contentScaleFactor = scaleFactor
-                tempoView.frame.origin = CGPoint(x: cell.backgroundImage.imageFrame.origin.x + 500 * scaleFactor, y: cell.backgroundImage.imageFrame.origin.y + 754 * scaleFactor)
-                
-                cell.backgroundImage.addSubview(tempoView)
-                
+//                let tempoView: UIImageView
+//                
+//                if let tempo = self.tempo {
+//                    tempoView = UIImageView(image: UIImage(named: tempo.description))
+//                } else {
+//                    tempoView = UIImageView(image: UIImage(named: "4:4"))
+//                }
+//                
+//                tempoView.contentMode = .scaleAspectFit
+//                tempoView.contentScaleFactor = scaleFactor
+//                tempoView.frame.origin = CGPoint(x: cell.backgroundImage.imageFrame.origin.x + 500 * scaleFactor, y: cell.backgroundImage.imageFrame.origin.y + 754 * scaleFactor)
+//                
+//                cell.backgroundImage.addSubview(tempoView)
+//                
                 if !self.notes.isEmpty {
                     let range = self.notes.count > 6 ? 0...5 : 0...self.notes.count - 1
                     cell.notes = Array(self.notes[range])

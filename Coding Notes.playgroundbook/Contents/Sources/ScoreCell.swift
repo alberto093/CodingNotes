@@ -85,7 +85,7 @@ public class ScoreCell: UICollectionViewCell {
     func configureNotes(with index: Int, isCountVisible: Bool) {
         
         let scaleFactor = self.backgroundImage.contentScaleFactor
-        var noteOriginX = self.backgroundImage.imageFrame.origin.x + (index == 0 ? 500 : (self.isClefVisibile == true ? 170 : -190)) * scaleFactor
+        var noteOriginX = self.backgroundImage.imageFrame.origin.x + (index == 0 ? 250 : (self.isClefVisibile == true ? 170 : -190)) * scaleFactor
         
         self.notes?.enumerated().forEach { indexNote, note in
             
