@@ -1,7 +1,7 @@
 //
 //  ScoreController.swift
 //
-//  Copyright © 2017 Alberto Saltarelli. All rights reserved.
+//  Copyright © 2019 Alberto Saltarelli. All rights reserved.
 //
 
 import UIKit
@@ -47,7 +47,7 @@ public class ScoreController: UICollectionViewController, UICollectionViewDelega
         collectionView.alwaysBounceVertical = true
         collectionView.isUserInteractionEnabled = false
         collectionView.backgroundView = UIImageView(image: UIImage(named: "Background"))
-        collectionView.addObserver(self, forKeyPath: "frame", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
+        collectionView.addObserver(self, forKeyPath: "frame", options: .new, context: nil)
     }
     
     public func addNote(duration: Duration, frequency: Frequency, accidental: Accidental? = nil, dots: UInt8? = nil) {

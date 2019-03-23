@@ -1,7 +1,7 @@
 //
 //  PlaygroundManager.swift
 //
-//  Copyright © 2017 Alberto Saltarelli. All rights reserved.
+//  Copyright © 2019 Alberto Saltarelli. All rights reserved.
 //
 
 import PlaygroundSupport

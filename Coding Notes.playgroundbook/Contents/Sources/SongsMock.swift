@@ -1,14 +1,14 @@
 //
-//  Song.swift
+//  SongsMock.swift
 //
-//  Copyright © 2017 Alberto Saltarelli. All rights reserved.
+//  Copyright © 2019 Alberto Saltarelli. All rights reserved.
 //
 
-public enum TimeSignature {
+public enum TimeSignature: CustomStringConvertible {
     
     case twoFour, threeFour, fourFour
     
-    var description: String {
+    public var description: String {
         switch self {
             case .twoFour: return "2:4"
             case .threeFour: return "3:4"
